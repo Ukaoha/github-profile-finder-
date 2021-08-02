@@ -1,130 +1,31 @@
-let input = document.getElementById('find_user');
-let button = document.getElementById('search_bar');
-let image = document.getElementById('image-profile-finder');
-let name = document.getElementById('name-profile-finder');
-let username = document.getElementById('username-profile-finder');
-let bio = document.getElementById('bio-profile-finder');
-let followers = document.getElementById('followers-profile-finder');
-let url = document.getElementById('url-profile-finder');
-
-let client_id = '' ;
-let client_secret = '';
+let input = document.querySelector("#find_user");
+let button = document.querySelector("#search_bar");
+let image = document.querySelector(".main-profile-image");
+let name = document.querySelector(".main-profile-name ");
+let username = document.querySelector(".main-profile-username");
+let bio = document.querySelector(".main-profile-bio");
+let followers = document.querySelector(".main-profile-followers ");
+let url = document.querySelector(".main-profile-url ");
 
 
-let fetchusers = async () => {
-    let api_cal = await fetch('htpps://api.github.com/users/${users}?client_id=${client_id}&client_secret=${client_secret}`'); 
 
-    let data = await api_cal.json();
-
-    return {data: data}
+let client_id = "Iv1.e45425e4460b1664" ;
+let client_secret = "471108d8d67a5495657c6561f32a35de60a651b1 ";
 
 
+let fetchUsers = async(user) => {
+    let api_call = await fetch(`https://api.github.com/users/${user}?client_id=${client_id}&client_secret=${client_secret}`);
+
+    let data = await api_call.json();
+    return{data}
 };
+
 let showData = () => {
-    fetchusers(input.value).then((response) => {
+    fetchUsers(input.value).then((response) => {
         console.log(response)
 
-        name.innerHTML = `Name <span class="name-profile-key-value">${response.data.name}</span>`
-        name.innerHTML = `Name <span class="name-profile-key-value">${response.data.name}</span>`
-        name.innerHTML = `Name <span class="name-profile-key-value">${response.data.name}</span>`
-        name.innerHTML = `Name <span class="name-profile-key-value">${response.data.name}</span>`
     })
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 button.addEventListener ("click" , () => {
@@ -138,5 +39,13 @@ showData();
 
 
 
-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
-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
+// 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 = githubtoken
+// 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
+
+// Client ID: Iv1.e45425e4460b1664
+// App ID: 129819
+Client ID: Iv1.e45425e4460b1664
+
+
+
+// 5b2e832063477f13ffc82fc4879c4d55d7cd6e6d = client_secret
