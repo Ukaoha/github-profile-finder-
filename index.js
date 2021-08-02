@@ -23,8 +23,86 @@ let fetchusers = async () => {
 let showData = () => {
     fetchusers(input.value).then((response) => {
         console.log(response)
+
+        name.innerHTML = `Name <span class="name-profile-key-value">${response.data.name}</span>`
+        name.innerHTML = `Name <span class="name-profile-key-value">${response.data.name}</span>`
+        name.innerHTML = `Name <span class="name-profile-key-value">${response.data.name}</span>`
+        name.innerHTML = `Name <span class="name-profile-key-value">${response.data.name}</span>`
     })
 };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -52,3 +130,13 @@ let showData = () => {
 button.addEventListener ("click" , () => {
 showData();
 })
+
+
+
+
+
+
+
+
+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
+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
