@@ -14,7 +14,7 @@ document.getElementById('search_bar').addEventListener('click',showUserData)
         }
 
         document.getElementById('res').innerHTML = `
-        <img src = "${data.avatar_url}" style=" border-raius:50%">
+        <img src = "${data.avatar_url}" style=" border-radius:50%">
         <p>${data.name}(${data.login}) </p>
         <p>${data.bio} </p>
         <p>${data.email} </p>
